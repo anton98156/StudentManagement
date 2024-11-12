@@ -26,7 +26,7 @@ public class StudentController {
             existingStudent.setFirstName(student.getFirstName());
             existingStudent.setLastName(student.getLastName());
             existingStudent.setMiddleName(student.getMiddleName());
-            existingStudent.setGroup(student.getGroup());
+            existingStudent.setStudentGroup(student.getStudentGroup());
             existingStudent.setAverageGrade(student.getAverageGrade());
             return ResponseEntity.ok(studentRepository.save(existingStudent));
         }).orElseGet(() -> ResponseEntity.notFound().build());

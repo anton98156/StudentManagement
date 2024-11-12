@@ -15,7 +15,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private String middleName;
-    private String group;
+    private String studentGroup;
     private Double averageGrade;
 
     public Long getId() {
@@ -50,12 +50,12 @@ public class Student {
         this.middleName = middleName;
     }
 
-    public String getGroup() {
-        return group;
+    public String getStudentGroup() {
+        return studentGroup;
     }
 
-    public void setGroup(String group) {
-        this.group = group;
+    public void setStudentGroup(String studentGroup) {
+        this.studentGroup = studentGroup;
     }
 
     public Double getAverageGrade() {
